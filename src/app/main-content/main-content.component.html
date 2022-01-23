@@ -1,0 +1,89 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid px-0">
+    <div class="col-2">
+      <button class="shareBtn">
+        <i class="fa fa-share-alt text-primary"></i> SHARE
+      </button>
+    </div>
+    <div class="col-10">
+      <div class="col-2 FR">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          (click)="isShown = !isShown"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="col-10 topNav">
+        <div
+          class="collapse justify-content-end navbar-collapse"
+          [ngClass]="{ show: isShown }"
+          id="navbarTogglerDemo03"
+        >
+          <ul class="navbar-nav mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a
+                routerLink="/home"
+                routerLinkActive="active"
+                class="nav-link FR"
+                href="#"
+                (click)="isShown = false"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/resume"
+                routerLinkActive="active"
+                class="nav-link FR"
+                href="#"
+                (click)="isShown = false"
+                >RESUME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/portfolio"
+                routerLinkActive="active"
+                class="nav-link FR"
+                href="#"
+                (click)="isShown = false"
+                >PORTFOLIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/blog"
+                routerLinkActive="active"
+                class="nav-link FR"
+                href="#"
+                (click)="isShown = false"
+                >BLOG</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/contact"
+                routerLinkActive="active"
+                class="nav-link FR"
+                href="#"
+                (click)="isShown = false"
+                >CONTACT
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="content-container">
+  <router-outlet></router-outlet>
+</div>

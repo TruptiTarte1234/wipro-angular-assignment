@@ -1,0 +1,15 @@
+.FL {
+  float: left;
+}
+.bold {
+  font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*='col-']:not(.col-1):not(.col-11) {
+    width: 100%;
+  }
+  .mobExpContainer {
+    margin-top: 3em;
+  }
+}

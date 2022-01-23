@@ -1,0 +1,70 @@
+.profilePic {
+  width: 6em;
+  border-radius: 50%;
+}
+.infoPanel {
+  padding: 2%;
+}
+
+.designation {
+  background: #fff;
+  border-radius: 10em;
+  font-weight: 600;
+  padding: 0.5em 1.5em;
+  margin: 0.5em 0;
+}
+
+.social-btns {
+  padding: 1em 0;
+}
+
+.social-btns .btn {
+  padding: 0.5em;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.social-btns .btn:last-child {
+  margin-right: 0;
+}
+
+.social-btns .btn .fa {
+  font-size: 1em;
+}
+
+.personalInfo div,
+.languages div,
+.interests div {
+  font-size: 0.8em;
+  font-weight: 500;
+  line-height: 1.7em;
+}
+
+.downloadBtn {
+  margin-top: 1em;
+  border-radius: 1em;
+  padding: 0.3em 1.5em;
+  border: none;
+}
+
+.downloadBtn:hover {
+  opacity: 0.5;
+}
+.languages,
+.interests {
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+  background: #fff;
+  padding: 1em;
+  margin-top: 1.5em;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+@media only screen and (max-width: 768px) {
+  .languages,
+  .interests {
+    width: 90%;
+  }
+}

@@ -1,0 +1,16 @@
+p {
+  font-family: Lato;
+}
+
+.leftPanel {
+  /*width: 30%;*/
+  /*margin-left: auto;*/
+  float: left;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+.rightPanel {
+  /*width: 70%;*/
+  float: left;
+}
